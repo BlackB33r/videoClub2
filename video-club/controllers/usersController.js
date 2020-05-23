@@ -1,30 +1,32 @@
 const express = require('express');
 
-// todos los elementos GET / => list
+//Todos los elementos / => list
 function list(req, res, next) {
+  //res.send('Aqui estaràn los usuarios de la app');
   res.render('index', { title: 'Mi app de video list' });
 }
 
-// regrese un elemento GET /:id => index
+//Un elemento /:id => index
 function index(req, res, next) {
+  //res.send('Aqui estaràn los usuarios de la app');
   res.render('index', { title: 'Mi app de video index' });
 }
-
-// crea un elemento POST /create => createError
+//Crea un elemento /create
 function create(req, res, next) {
+  //res.send('Aqui estaràn los usuarios de la app');
   res.render('index', { title: 'Mi app de video create' });
 }
-
-// modifica un elemento PUT /:id => update
+//Modifica un elemento /:id
 function update(req, res, next) {
+  //res.send('Aqui estaràn los usuarios de la app');
   res.render('index', { title: 'Mi app de video update' });
 }
-
-//elimina un elemento DELETE /:id => destroy
+//Eliminar un elemento /:id
 function destroy(req, res, next) {
+  //res.send('Aqui estaràn los usuarios de la app');
   res.render('index', { title: 'Mi app de video destroy' });
 }
 
 module.exports = {
-  list, index, create, update, destroy
+	list, index, create, update, destroy
 }
